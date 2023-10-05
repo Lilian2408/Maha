@@ -155,15 +155,78 @@ footer .foot2 ul li:hover {
     cursor: pointer;
 }
 
-@media screen and (max-width= 992px) {
+@media screen and (max-width:992px) {
+    main{
+        margin-left: auto;
+        margin-right: auto;
+    }
     main .headers{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
     .headers .heads{
-    width: 50%;
+    width: 100%;
     }
     .head img{
-        width: 45%;
+        width: 100%;
+    }
+
+    .heads .heading{
+        padding: 10px 0;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width:768px) {
+    main{
+        padding: 70px;
+    }
+    nav button {
+        display: none;
+    }
+
+    .headers .heads{
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    nav button {
+        display: none;
+    }
+
+    .toogler {
+        display: block;
+    }
+
+    .ri-close-circle-fill {
+        display: none;
+    }
+
+    nav ul {
+        position: fixed;
+        flex-direction: column;
+        gap: 30px;
+        background-color: white;
+        border: 1px solid gray;
+        width: 70%;
+        top: -35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 1rem;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+
+    nav {
+        justify-content: space-between;
+        padding-left: 40px;
+        padding-right: 40px;
+
+    }
+
+    .header h1{
+        font-size: 30px;
     }
 }
