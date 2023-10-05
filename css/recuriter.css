@@ -1,0 +1,719 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Newsreader';
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(230, 227, 227);
+}
+
+a {
+    text-decoration: none;
+    color: #424549;
+}
+
+.toogler {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px 8px;
+    font-size: 16px;
+    font-family: 'Mulish';
+    font-weight: 500;
+
+}
+
+nav button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #57093d;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+
+main {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/recruiterimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+}
+
+main .header {
+    padding: 60px;
+    width: 60%;
+}
+
+main .header h1 {
+    font-size: 40px;
+    padding: 50px 0;
+    color: white;
+}
+
+main .header p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+}
+
+.button {
+    padding-left: 60px;
+}
+
+.button .recruit {
+    padding: 18px 15px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.button .talent {
+    padding: 18px 15px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+#find {
+    padding: 60px;
+    background: #f6f9fc;
+}
+
+#find .finds {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#find .find {
+    width: 45%;
+}
+
+.finds img {
+    width: 45%;
+}
+
+.find h1 {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.find p {
+    font-size: 20px;
+    padding: 20px 0;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #6c757d;
+}
+
+#trending {
+    padding: 60px 60px;
+    background-color: #f6f9fc;
+}
+
+#trending h1 {
+    background-color: #e9f3ff;
+    color: #b9a3f1;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+    font-family: 'Mulish';
+    margin-left: 50px;
+    display: inline-block;
+}
+
+#trending .trends {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 50px;
+}
+
+#trending .trends .trend {
+    padding: 40px 5px;
+    text-align: center;
+    background-color: white;
+}
+
+#trending .trends .trend h5 {
+    font-size: 16px;
+    font-family: 'Mulish';
+    font-weight: 500;
+    padding: 30px 0 0;
+}
+
+#trending .trends .trend ul i {
+    background-color: #e9f3ff;
+    padding: 20px 20px;
+    border-radius: 50px;
+}
+
+#works .work {
+    text-align: center;
+    padding: 50px 30px;
+}
+
+#works .work h1 {
+    font-size: 40px;
+    padding: 10px;
+    color: #212529;
+}
+
+#works .work p {
+    font-size: 18px;
+    padding: 15px;
+}
+
+#works .working i {
+    font-size: 50px;
+    padding: 30px 0;
+    color: #522deb;
+}
+
+#works .working h1 {
+    font-size: 25px;
+    color: #004975;
+    padding: 10px 0;
+}
+
+#works .working p {
+    font-size: 16px;
+    color: #838686;
+    padding: 0 20px;
+}
+
+#works .working a {
+    color: blue;
+    text-decoration: underline;
+}
+
+#works .worked {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 20px;
+}
+
+#works .worked img {
+    width: 100%;
+}
+
+.worked .working {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#service {
+    text-align: center;
+    padding: 60px;
+    background: linear-gradient(to right, #5c1547, #810b38);
+}
+
+#service h1 {
+    color: white;
+    font-size: 30px;
+    padding: 30px;
+}
+
+#service .services {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+}
+
+#service .serve {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 0;
+}
+
+.serve h4,
+#service .serve1 h4 {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.serve h5 {
+    font-size: 16px;
+    padding: 20px 20px 0;
+    text-decoration: line-through;
+}
+
+.serve h6 {
+    font-size: 30px;
+    padding: 0 10px 0;
+}
+
+.serve p,
+#service .serve1 p {
+    font-size: 16px;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+#service .serve1 {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 0;
+}
+
+#service .serve1 h5 {
+    font-size: 30px;
+    padding: 20px 0 0;
+}
+
+#service .serve1 a {
+    color: blue;
+    text-decoration: underline;
+}
+
+#service .get {
+    padding: 20px;
+    border-radius: 30px;
+    color: white;
+    border: 1px solid white;
+    font-size: 16px;
+    background-color: #681242;
+    margin-top: 30px;
+}
+
+#other {
+    background-color: #f6f9fc;
+}
+
+#other .service {
+    text-align: center;
+    padding: 40px 0 20px;
+}
+
+#other .service h1 {
+    font-size: 40px;
+    padding: 20px;
+    color: #494d51;
+    font-family: 'Newsreader';
+}
+
+#other .service p {
+    font-size: 20px;
+    color: #6c757d;
+}
+
+#other .others {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+#other .services {
+    width: 50%;
+    background-color: black;
+    height: 400px;
+    padding: 30px;
+
+}
+
+#other .matching {
+    width: 50%;
+    background-color: #9c337d;
+    padding: 30px;
+    height: 400px;
+}
+
+#other .services h1,
+#other .matching h1 {
+    font-size: 40px;
+    font-family: 'Newsreader';
+    font-weight: bold;
+    color: white;
+    padding: 20px 0;
+}
+
+#other .services p,
+#other .matching p {
+    font-size: 20px;
+    color: white;
+    line-height: 1.5;
+    font-weight: 400;
+    padding: 20px 0;
+    font-family: 'Mulish';
+}
+
+#other .services .view {
+    all: unset;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#other .matching .soon {
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #9c337d;
+    color: white;
+    border: 2px solid white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    padding: 60px 30px;
+}
+
+footer .foot1 h4 {
+    color: #8c8882;
+    padding: 30px;
+    font-weight: 100;
+    font-family: 'Mulish';
+}
+
+footer .foot2 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    list-style: none;
+    gap: 10px;
+}
+
+footer .foot2 ul li {
+    font-size: 20px;
+    padding: 10px 12px;
+    border-radius: 50px;
+    /* background-color: black; */
+    border: 1px solid rgb(206, 203, 203);
+    transition: 0.5s;
+}
+
+footer .foot2 ul li:hover {
+    background-color: #810b38;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 992px) {
+    nav ul li {
+        list-style: none;
+        padding: 8px 5px;
+        font-size: 14px;
+        font-family: 'Mulish';
+        font-weight: 500;
+    }
+
+    #other .matching h1,
+    #other .services h1 {
+        font-size: 30px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav button {
+        display: none;
+    }
+
+
+    main .header {
+        padding: 10px;
+        width: 70%;
+    }
+
+    main .header h1 {
+        font-size: 30px;
+        padding: 40px 0;
+    }
+
+    .button {
+        padding: 20px 0;
+    }
+
+    .finds img {
+        width: 50%;
+    }
+
+    .find h1 {
+        font-size: 40px;
+    }
+
+    #trending {
+        padding: 20px
+    }
+
+    #trending .trends {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    #works .worked {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #service .services {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #works .worked {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    #works .working h1 {
+        font-size: 15px;
+    }
+
+    #works .working i {
+        font-size: 40px;
+        padding: 10px 0;
+    }
+
+    #works .worked img {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #worked .working {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #other .matching h1,
+    #other .services h1 {
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    #other .services p,
+    #other .matching p {
+        font-size: 16px;
+        padding: 18px 0;
+    }
+
+    #service .serve {
+        padding: 18px 0;
+    }
+
+    .serve h4,
+    #service .serve1 h4 {
+        font-size: 16px;
+        font-weight: 100;
+    }
+
+    .serve h5 {
+        font-size: 14px;
+        padding: 15px 15px 0;
+    }
+
+    .serve h6 {
+        font-size: 25px;
+        padding: 0 8px 0;
+    }
+
+    .serve p,
+    #service .serve1 p {
+        font-size: 14px;
+        padding: 15px;
+        line-height: 1.0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    nav button {
+        display: none;
+    }
+
+    .toogler {
+        display: block;
+    }
+
+    .ri-close-circle-fill {
+        display: none;
+    }
+
+    nav ul {
+        position: fixed;
+        flex-direction: column;
+        gap: 30px;
+        background-color: white;
+        border: 1px solid gray;
+        width: 70%;
+        top: -35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 1rem;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+
+    nav {
+        justify-content: space-between;
+        padding-left: 40px;
+        padding-right: 40px;
+
+    }
+
+    main {
+        padding: 40px;
+    }
+
+    main .header {
+        padding: 10px;
+        width: 100%;
+    }
+
+    main .header p {
+        font-size: 16px;
+
+    }
+
+    main .header h1 {
+        font-size: 25px;
+        padding: 20px 0;
+    }
+
+    #find .find {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #find .finds {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .finds img {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button .recruit,
+    .button .talent {
+        padding: 10px 2px;
+        border-radius: 25px;
+        font-size: 10px;
+    }
+
+    .find h1 {
+        font-size: 30px;
+    }
+
+    .find p {
+        font-size: 18px;
+        padding: 18px 0;
+        font-weight: 200;
+        line-height: 1.3;
+    }
+
+    #works .worked img{
+        display: none;
+    }
+
+    #works .worked {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #works .working i {
+        font-size: 30px;
+    }
+
+    #works .working h1 {
+        font-size: 20px;
+        padding: 8px 0;
+    }
+
+    #works .working p {
+        font-size: 12px;
+        padding: 0 8px;
+    }
+
+    #service .services {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #other .others{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #other .services, #other .matching{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 300px;
+    }
+
+    #other .matching h1,
+    #other .services h1 {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    #other .services p,
+    #other .matching p {
+        font-size: 14px;
+        padding: 15px 0;
+    }
+
+    #other .matching .soon {
+        padding: 10px;
+        border: 1px solid white;
+        font-size: 14px;
+    }
+
+    #other .services .view {
+        padding: 10px;
+        border: 1px solid white;
+        font-size: 14px;
+    }
+}

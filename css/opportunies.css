@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Newsreader';
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(230, 227, 227);
+}
+
+a {
+    text-decoration: none;
+    color: #424549;
+}
+.toogler{
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px 8px;
+    font-size: 16px;
+    font-family: 'Mulish';
+    font-weight: 500;
+
+}
+
+nav button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #57093d;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+
+main {
+    padding: 100px;
+}
+
+.header h1 {
+    padding: 20px;
+    font-size: 40px;
+}
+
+.header p {
+    padding: 20px;
+    font-size: 18px;
+}
+
+main .headers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.headers .heads {
+    background-color: white;
+    height: 570px;
+    padding: 0 30px;
+    box-shadow: 3px 3px 12px rgb(218, 216, 216);
+}
+
+.headers .heads .reg {
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 10px 0;
+
+}
+
+.headers .heads h1 {
+    font-size: 30px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.headers .heads p {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.heads .heading {
+    display: flex;
+    padding: 30px;
+}
+
+.heads .heading h6 {
+    padding-top: 30px;
+    font-weight: 400;
+}
+
+.heads .heading p {
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    padding: 60px 30px;
+}
+
+footer .foot1 h4 {
+    color: #8c8882;
+    padding: 30px;
+    font-weight: 100;
+    font-family: 'Mulish';
+}
+
+footer .foot2 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    list-style: none;
+    gap: 10px;
+}
+
+footer .foot2 ul li {
+    font-size: 20px;
+    padding: 10px 12px;
+    border-radius: 50px;
+    /* background-color: black; */
+    border: 1px solid rgb(206, 203, 203);
+    transition: 0.5s;
+}
+
+footer .foot2 ul li:hover {
+    background-color: #810b38;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+@media screen and (max-width= 992px) {
+    main .headers{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .headers .heads{
+    width: 50%;
+    }
+    .head img{
+        width: 45%;
+    }
+}

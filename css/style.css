@@ -1,0 +1,762 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Newsreader';
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(230, 227, 227);
+}
+
+a {
+    text-decoration: none;
+    color: #424549;
+}
+
+.toogler {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px 8px;
+    font-size: 16px;
+    font-family: 'Mulish';
+    font-weight: 500;
+
+}
+
+nav button a {
+    color: white;
+}
+
+nav button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #57093d;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 8rem 10px 10px;
+    background-color: #f8f9fa;
+}
+
+main .header {
+    width: 35%;
+}
+
+main img {
+    width: 80%;
+}
+
+main .header h1 {
+    padding: 20px 0;
+    font-size: 60px;
+    font-family: 'Newsreader';
+    font-weight: 500;
+}
+
+main .header .highlight4 {
+    background: linear-gradient(to right, #5c1547, #810b38);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: transparent;
+    font-family: 'Newsreader';
+}
+
+main .header p {
+    font-size: 24px;
+    padding: 15px 0;
+    line-height: 1.5;
+    color: #6c757d;
+    font-family: 'Mulish';
+}
+
+.header .button {
+    padding: 20px 0;
+}
+
+.header .recruit {
+    padding: 18px 15px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.header .talent {
+    padding: 18px 15px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+main .header p .highlight {
+    font-weight: bold;
+}
+
+header {
+    background-image: linear-gradient(to right, #5c1547, #810b38);
+    padding: 60px 30px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    width: 60%;
+    margin: auto;
+    margin: 0 auto 50px;
+    font-size: 40px;
+    line-height: 1.5;
+    font-family: 'Newsreader';
+}
+
+#best {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 60px 0;
+    background-color: #f6f9fc;
+}
+
+#best .best1 {
+    width: 45%;
+    padding: 60px;
+}
+
+#best img {
+    width: 50%;
+}
+
+#best .best1 h1,
+#best .best1 h1 .highlight1 {
+    padding: 20px 0;
+    font-size: 48px;
+    font-family: 'Newsreader';
+}
+
+#best .best1 h1 .highlight1 {
+
+    background: linear-gradient(to right, #5c1547, #810b38);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: transparent;
+    font-family: 'Newsreader';
+
+}
+
+#best .best1 p {
+    font-size: 20px;
+    padding: 20px 0;
+    color: #8f9aa8;
+}
+
+#best .best1 h2 {
+    Color: #212529;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#best .best1 .loads {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+#best .best1 .loads img {
+    width: 30%;
+
+}
+
+#trending {
+    padding: 60px 60px;
+    background-color: #f6f9fc;
+}
+
+#trending h1 {
+    background-color: #e9f3ff;
+    color: #b9a3f1;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+    font-family: 'Mulish';
+    margin-left: 50px;
+    display: inline-block;
+}
+
+#trending .trends {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 50px;
+}
+
+#trending .trends .trend {
+    padding: 40px 5px;
+    text-align: center;
+    background-color: white;
+}
+
+#trending .trends .trend h5 {
+    font-size: 16px;
+    font-family: 'Mulish';
+    font-weight: 500;
+    padding: 30px 0 0;
+}
+
+#trending .trends .trend ul i {
+    background-color: #e9f3ff;
+    padding: 20px 20px;
+    border-radius: 50px;
+}
+
+#services {
+    background-color: #f6f9fc;
+}
+
+#services .service {
+    text-align: center;
+    padding: 40px 0 20px;
+}
+
+#services .service h1 {
+    font-size: 40px;
+    padding: 20px;
+    color: #494d51;
+    font-family: 'Newsreader';
+}
+
+#services .service p {
+    font-size: 20px;
+    color: #6c757d;
+}
+
+#services .serve {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+#services .serve .talents {
+    width: 50%;
+    background-color: black;
+    height: 400px;
+    padding: 30px;
+
+}
+
+#services .serve .recruiters {
+    width: 50%;
+    background-color: #9c337d;
+    padding: 30px;
+    height: 400px;
+}
+
+#services .serve .recruiters h1,
+#services .serve .talents h1 {
+    font-size: 40px;
+    font-family: 'Newsreader';
+    font-weight: bold;
+    color: white;
+    padding: 20px 0;
+}
+
+#services .serve .talents p,
+#services .serve .recruiters p {
+    font-size: 20px;
+    color: white;
+    line-height: 1.5;
+    font-weight: 400;
+    padding: 20px 0;
+    font-family: 'Mulish';
+}
+
+#services .serve .talents .btn1 {
+    all: unset;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#services .serve .recruiters .btn {
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #9c337d;
+    color: white;
+    border: 2px solid white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#partnership {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/Partnership-Working.png);
+    padding: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#partnership .partner {
+    width: 60%;
+}
+
+#partnership .partner h1 {
+    font-size: 60px;
+    color: white;
+    font-family: 'Newsreader';
+    padding: 60px 20px 0;
+    font-weight: bold;
+}
+
+#partnership .partner p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Mulish';
+    padding: 0 25px;
+    margin-bottom: 20px;
+}
+
+#partnership .partner .btn2 {
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+
+#touch {
+    text-align: center;
+    padding: 60px 60px;
+}
+
+#touch .touchs {
+    width: 40%;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#touch .touchs h1 {
+    font-size: 40px;
+    padding: 20px;
+}
+
+#touch .touchs p {
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+#touch .address ul {
+    list-style: none;
+}
+
+#touch .address ul li {
+    padding: 10px;
+}
+
+#touch .address ul li .add {}
+
+#touch .phone {
+    padding: 20px;
+    font-size: 2rem;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    padding: 60px 30px;
+}
+
+footer .foot1 h4 {
+    color: #8c8882;
+    padding: 30px;
+    font-weight: 100;
+    font-family: 'Mulish';
+}
+
+footer .foot2 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    list-style: none;
+    gap: 10px;
+}
+
+footer .foot2 ul li {
+    font-size: 20px;
+    padding: 10px 12px;
+    border-radius: 50px;
+    /* background-color: black; */
+    border: 1px solid rgb(206, 203, 203);
+    transition: 0.5s;
+}
+
+footer .foot2 ul li:hover {
+    background-color: #57093d;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+    main .header h1 {
+        font-size: 50px;
+        padding: 15px 0;
+    }
+
+    .header img {
+        width: 25%;
+    }
+
+    main .header {
+        width: 50%;
+    }
+
+    main .header p {
+        font-size: 18px;
+    }
+
+    .header .button {
+        padding: 15px 0;
+    }
+
+    .header .recruit {
+        padding: 15px 12px;
+    }
+
+    .header .talent {
+        padding: 15px 12px;
+    }
+
+    header h1 {
+        width: 60%;
+        font-size: 35px;
+    }
+
+    #trending {
+        padding: 50px
+    }
+
+    #best .best1 h1,
+    #best .best1 h1 .highlight1 {
+        font-size: 40px;
+        padding: 18px 0;
+    }
+
+    #best .best1 h2 {
+        font-size: 35px;
+    }
+
+    #services .serve .talents p,
+    #services .serve .recruiters p {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    #partnership .partner h1 {
+        font-size: 50px;
+    }
+
+    #partnership .partner p {
+        font-size: 16px;
+    }
+
+    #touch .touchs h1 {
+        font-size: 30px;
+        padding: 15px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav button {
+        display: none;
+    }
+
+    main {
+        flex-direction: column-reverse;
+    }
+
+    main .header h1 {
+        font-size: 30px;
+        padding: 10px 0;
+    }
+
+    .header img {
+        width: 20%;
+    }
+
+    main .header {
+        width: 55%;
+    }
+
+    main .header p {
+        font-size: 18px;
+    }
+
+    .header .button {
+        padding: 12px 0;
+    }
+
+    .header .recruit,
+    .header .talent {
+        padding: 13px 10px;
+    }
+
+    header h1 {
+        width: 70%;
+        font-size: 30px;
+    }
+
+    #trending {
+        padding: 30px
+    }
+
+    #best {
+        flex-direction: column-reverse;
+        padding: 30px;
+    }
+
+    #best .best1 {
+        width: 70%;
+        padding: 40px;
+    }
+
+    #best .best1 h1,
+    #best .best1 h1 .highlight1 {
+        font-size: 40px;
+
+    }
+
+    #best .best1 p,
+    #best .best1 p {
+        font-size: 18px;
+        padding: 15px 0;
+    }
+
+    #best .best1 h2 {
+        font-size: 30px;
+    }
+
+    #trending .trends {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px;
+    }
+
+    #trending h1{
+        margin-left: 20px;
+    }
+
+    #services .serve .recruiters h1,
+    #services .serve .talents h1 {
+        font-size: 30px;
+        padding: 10px 0;
+    }
+
+    #services .serve .talents p,
+    #services .serve .recruiters p {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #partnership{
+        padding: 60px 30px;
+    }
+
+    #partnership .partner{
+        width: 90%;
+    }
+
+    #partnership .partner h1{
+        padding: 20px;
+    }
+    #touch .touchs{
+        width: 100%;
+    }
+    #touch .touchs h1 {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    nav{
+        justify-content: space-between;
+        padding-left: 40px;
+        padding-right: 40px;
+
+    }
+    nav button {
+        display: none;
+    }
+
+    .toogler {
+        display: block;
+    }
+
+    .ri-close-circle-fill {
+        display: none;
+    }
+
+    nav ul {
+        position: fixed;
+        flex-direction: column;
+        gap: 30px;
+        background-color: white;
+        border: 1px solid gray;
+        width: 70%;
+        top: -35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 1rem;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+
+    main {
+        flex-direction: column-reverse;
+    }
+
+    main .header h1 {
+        font-size: 25px;
+        padding: 8px 0;
+    }
+
+    .header img {
+        width: 20%;
+    }
+
+    main .header {
+        width: 70%;
+    }
+
+    main .header p {
+        font-size: 16px;
+    }
+
+    .header .button {
+        padding: 12px 0;
+    }
+
+    .header .recruit,
+    .header .talent {
+        padding: 13px 10px;
+    }
+
+    header h1 {
+        width: 80%;
+        font-size: 25px;
+    }
+
+    #best {
+        flex-direction: column-reverse;
+        padding: 30px;
+    }
+
+    #best .best1 {
+        width: 90%;
+        padding: 40px;
+    }
+
+    #best .best1 h1,
+    #best .best1 h1 .highlight1 {
+        font-size: 35px;
+
+    }
+
+    #best .best1 p,
+    #best .best1 p {
+        font-size: 16px;
+        padding: 12px 0;
+    }
+
+    #best .best1 h2 {
+        font-size: 25px;
+    }
+
+    #trending {
+        padding: 20px
+    }
+
+    #trending .trends {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #services .serve .recruiters, #services .serve .talents{
+        width: 60%;
+        padding: 20px;
+        height: 350px;
+    }
+
+    #services .serve .recruiters h1,
+    #services .serve .talents h1 {
+        font-size: 25px;
+        padding: 8px 0;
+    }
+
+    #services .serve .talents p,
+    #services .serve .recruiters p {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    #partnership .partner h1 {
+        font-size: 20px;
+    }
+
+    #partnership .partner p {
+        font-size: 14px;
+    }
+
+    #touch{
+        width: 90%;
+        padding: 30px;
+        margin: 0 auto;
+    }
+    #touch .touchs h1 {
+        font-size: 15px;
+        padding: 8px 0;
+    }
+}
